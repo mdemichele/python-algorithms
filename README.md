@@ -13,3 +13,6 @@ This my collection of famous algorithms - all written in Python. The goal of the
 - BFS Traversals 
 ## 3. Sorting Algorithms 
 - Selection Sort 
+## 4. Backtracking 
+- N Queens Problem 
+- Sudoku Solver
