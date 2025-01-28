@@ -6,7 +6,7 @@ def make_change_helper(coins, amount, memo):
     print("amount: {}".format(amount))
     
     # ---------------- BASE CASES ------------------- #
-    # BASE CASE 1: If the current amount is less than 1, you've gone too far. This branch on the recursion tree is not a viable solution, so don't count it 
+    # BASE CASE 1: If the current amount is less than 0, you've gone too far. This branch on the recursion tree is not a viable solution, so don't count it 
     if amount < 0:
         return -1
         
@@ -60,11 +60,14 @@ def make_change(coins, amount):
 
 # Testing 
 if __name__ == "__main__":
-    
     print("Testing Make Change")
     
     print("------- TEST 1 --------")
     coins1 = [1, 2, 5]
     amount = 11
+    print("make_change function started...\n")
+    print("\n")
     answer = make_change(coins1, amount)
+    print("make_change function ended...\n")
+    print("\n")
     print("Answer should be 3: answer was {}".format(answer))
