@@ -14,7 +14,7 @@ def make_change_helper(coins, amount, memo):
     if amount == 0:
         return 0
     
-    # BASE CASE 3: You reached the current amount, so it should already be in the cache. 
+    # BASE CASE 3: You reached an existing amount that is already in the cache. 
     if memo[amount] != 0:
         return memo[amount]
         
